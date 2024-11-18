@@ -1,0 +1,13 @@
+<h1>Artistas Cadastrados</h1>
+
+<% if (artists.length > 0) { %>
+    <ul>
+        <% artists.forEach(function(artist) { %>
+            <li><%= artist.name %> - <%= artist.genre %></li>
+        <% }); %>
+    </ul>
+<% } else { %>
+    <p>Não há artistas cadastrados.</p>
+<% } %>
+
+<a href="/artists/add">Cadastrar Novo Artista</a>  <!-- Link para o formulário de cadastro -->

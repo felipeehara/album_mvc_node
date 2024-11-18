@@ -21,6 +21,7 @@ app.get('/discs/add', discController.addDiscForm);
 app.post('/discs/add', discController.addDisc);
 app.get('/artists/add', artistController.addArtistForm);
 app.post('/artists/add', artistController.addArtist);
+app.get('/artists', artistController.viewArtists);  // Rota para ver artistas
 app.get('/genres', genreController.listGenres);
 
 app.listen(port, () => {
