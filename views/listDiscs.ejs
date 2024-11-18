@@ -1,0 +1,7 @@
+<h1>Lista de Discos</h1>
+<ul>
+    <% discs.forEach(disc => { %>
+        <li><strong><%= disc.title %></strong> (<%= disc.year %>) - <%= disc.genre %></li>
+    <% }); %>
+</ul>
+<a href="/discs/add">Adicionar Disco</a>
